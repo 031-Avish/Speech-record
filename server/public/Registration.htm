@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="assets/css/Regstyles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <div class="input-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" required>
+                <span class="error-message" id="firstNameError"></span>
+            </div>
+            <div class="input-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" required>
+                <span class="error-message" id="lastNameError"></span>
+            </div>
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="0" required>
+                <span class="error-message" id="ageError"></span>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+                <span class="error-message" id="genderError"></span>
+            </div>
+            <div class="input-group">
+                <label for="email">Email (Optional):</label>
+                <input type="email" name="email" id="email">
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <button type="submit" id="submit">Register</button>
+
+        </form>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

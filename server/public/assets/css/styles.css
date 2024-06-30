@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif; /* Modern and clean font */
+  color: #333;
+  margin: 2em;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Link Styles */
+a {
+  color: #2980b9; /* Blue accent color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #17a2b8; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #3498db; /* Lighter blue for visited links */
+}
+
+/* Heading Styles */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #34495e; /* Darker blue for headings */
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2980b9; /* Accent color for subheadings */
+  text-transform: uppercase;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Button Styles */
+button {
+  display: inline-block;
+  padding: 1.5rem 3rem; /* Increased padding for spacing */
+  border: 2px solid #fff; /* White border */
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    #2ecc71,
+    #27ae60
+  ); /* Green gradient */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 1rem 2rem; /* Added margin for spacing */
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    #3498db,
+    #2980b9
+  ); /* Blue gradient on hover */
+  border-color: #2980b9; /* Change border color on hover */
+}
+
+/* Form Styles */
+#controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Unordered List Styles */
+ul {
+  padding-left: 0;
+  list-style: none; /* Remove default bullet points */
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/* Ordered List Styles */
+ol {
+  padding-left: 1.5rem; /* Add some padding for ordered list */
+  list-style: decimal; /* Use decimal list style */
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Recordings List Styles */
+#recordingsList {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+/* Text Box Styles */
+#text-box {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  margin: 0 14%; /* Combine margin properties */
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 1rem 2rem; /* Reduce padding for smaller screens */
+  }
+
+  #recordingsList {
+    max-width: 100%; /* Adjust for smaller screens */
+  }
+}
