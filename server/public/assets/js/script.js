@@ -75,7 +75,7 @@ document
     var genderValue = gender ? gender.value : null;
     window.location.href = "./Record.htm";
     // Send form data to server
-    fetch("http://localhost:3000/submit", {
+    fetch("/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

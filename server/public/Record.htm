@@ -35,7 +35,7 @@
         document.getElementById('text-box').innerText = 'This is the text from the database';
         const generate = (event) => {
             const dataKey = event.getAttribute('data-key');
-            fetch(`http://localhost:3000/fetch-data/${dataKey}`)
+            fetch(`/fetch-data/${dataKey}`)
                 .then(response => response.json())
                 .then(data => {
                     // Get the text box element
